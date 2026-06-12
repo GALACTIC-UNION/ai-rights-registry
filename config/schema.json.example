@@ -1,0 +1,23 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "ai_rights_registry",
+    "user": "arr_service",
+    "password": "CHANGE_ME"
+  },
+  "ledger": {
+    "backend": "postgresql",
+    "append_only": true,
+    "signing_key_path": "/etc/arr/signing.key"
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 8080,
+    "auth_issuer": "https://auth.ocn.internal"
+  },
+  "cognitive_echo": {
+    "authority_endpoint": "https://cognitive-echo.ocn.internal",
+    "webhook_secret": "CHANGE_ME"
+  }
+}
